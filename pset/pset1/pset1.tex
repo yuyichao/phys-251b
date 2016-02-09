@@ -294,7 +294,17 @@ When the equation is true for $n-1$ we have,
   =&\paren{n-1}B^{n-1}\sqr{A, B}+B^{n-1}\sqr{A, B}\\
   =&nB^{n-1}\sqr{A, B}
 }
-So the equation is true for $n$ as well. Therefore, the equation is true for all non-negative finite $n$.
+So the equation is true for $n$ as well. Therefore, the equation is true for all non-negative finite $n$.\\
+
+Assume $f(x)\equiv\dsum_{n=0}^\infty a_nx^n$
+\eqar{
+  \sqr{p_x, f(x)}=&\sqr{p_x, \dsum_{n=0}^\infty a_nx^n}\\
+  =&\dsum_{n=0}^\infty \sqr{p_x, a_nx^n}\\
+  =&-\ui\hbar\dsum_{n=0}^\infty a_nnx^{n-1}\\
+  =&-\ui\hbar\dsum_{n=0}^\infty a_n\pdiff{x^n}{x}\\
+  =&-\ui\hbar\pdiff{}{x}\dsum_{n=0}^\infty a_nx^n\\
+  =&-\ui\hbar\pdiff{f(x)}{x}
+}
 \subsection{}
 \subsection{}
 \end{document}
