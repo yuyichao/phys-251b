@@ -210,9 +210,29 @@ See (a)
 Eigenvalues are $\varepsilon_0-3t$ for eigenvector $\paren{\dfrac12,\dfrac12,\dfrac12,\dfrac12}$ and $\varepsilon_0+t$ for eigenvectors, $\paren{\dfrac12,\dfrac12,-\dfrac12,-\dfrac12}$, $\paren{\dfrac12,-\dfrac12,\dfrac12,-\dfrac12}$, $\paren{\dfrac12,-\dfrac12,-\dfrac12,\dfrac12}$.
 \section{}
 \subsection{}
+\eqar{
+  H=\begin{pmatrix}
+    \varepsilon_0&-t&&&&-t&&-t\\
+    -t&\varepsilon_0&-t&&-t&&&\\
+    &-t&\varepsilon_0&-t&&&&-t\\
+    &&-t&\varepsilon_0&-t&&-t&\\
+    &-t&&-t&\varepsilon_0&-t&&\\
+    -t&&&&-t&\varepsilon_0&-t&\\
+    &&&-t&&-t&\varepsilon_0&-t\\
+    -t&&-t&&&&-t&\varepsilon_0
+  \end{pmatrix}
+}
 \subsection{}
 \subsection{}
 \section{}
+The constrains is that the angular momentum cannot perfectly point in a certain
+direction and there will always be some fluctuations. This uncertain comes from,
+\eqar{
+  \angl{\Delta L_x, \Delta L_y}\geqslant&\frac1{2\ui}\angl{\sqr{L_x, L_y}}\\
+  =&\frac{\hbar}{2}\angl{L_z}\\
+  =&\frac{\hbar^2m}{2}
+}
+Which can only be $0$ when $m=0$.
 \section{}
 \subsection{}
 \subsection{}
