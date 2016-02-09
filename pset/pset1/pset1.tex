@@ -285,6 +285,16 @@ It could have non-trivial effect if it is possible to interfere this system
 with another one.
 \section{}
 \subsection{}
+For $n=0$, $\sqr{A, B^0}=0$ is true.
+When the equation is true for $n-1$ we have,
+\eqar{
+  \sqr{A, B^n}=&\sqr{A, B^{n-1}B}\\
+  =&\sqr{A, B^{n-1}}B+B^{n-1}\sqr{A, B}\\
+  =&\paren{n-1}B^{n-2}\sqr{A, B}B+B^{n-1}\sqr{A, B}\\
+  =&\paren{n-1}B^{n-1}\sqr{A, B}+B^{n-1}\sqr{A, B}\\
+  =&nB^{n-1}\sqr{A, B}
+}
+So the equation is true for $n$ as well. Therefore, the equation is true for all non-negative finite $n$.
 \subsection{}
 \subsection{}
 \end{document}
