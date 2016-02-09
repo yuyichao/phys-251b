@@ -235,6 +235,16 @@ direction and there will always be some fluctuations. This uncertain comes from,
 Which can only be $0$ when $m=0$.
 \section{}
 \subsection{}
+Define $g(\phi, \phi_0)\equiv\ue^{-\ui L_z\phi_0/\hbar}f(\phi)$
+\eqar{
+  \pdiff{g}{\phi_0}=&-\frac{\ui L_z}{\hbar}\ue^{-\ui L_z\phi_0/\hbar}f(\phi)\\
+  =&-\pdiff{}{\phi}\ue^{-\ui L_z\phi_0/\hbar}f(\phi)\\
+  =&-\pdiff{g}{\phi}\\
+  \ud g=&\pdiff{g}{\phi_0}\ud\phi_0+\pdiff{g}{\phi}\ud\phi\\
+  =&\pdiff{g}{\phi}\paren{\ud\phi-\ud\phi_0}
+}
+Therefore $g=g(\phi-\phi_0)$ (since it has $0$ gradient in this direction).
+Since $g(\phi) = f(\phi)$ (when $\phi_0 = 0$), $g(\phi, \phi_0) = f(\phi - \phi_0)$ for all $\phi_0$.
 \subsection{}
 \subsection{}
 \subsection{}
