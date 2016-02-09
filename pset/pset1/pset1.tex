@@ -246,6 +246,18 @@ Define $g(\phi, \phi_0)\equiv\ue^{-\ui L_z\phi_0/\hbar}f(\phi)$
 Therefore $g=g(\phi-\phi_0)$ (since it has $0$ gradient in this direction).
 Since $g(\phi) = f(\phi)$ (when $\phi_0 = 0$), $g(\phi, \phi_0) = f(\phi - \phi_0)$ for all $\phi_0$.
 \subsection{}
+Define $\sigma_n\equiv\sigma\cdot\hat n$
+\eqar{
+  \paren{\sigma\cdot\hat n}^2=&n_x^2 + n_y^2 + n_z^2\\
+  =&1
+}
+(using the fact that $\sigma_i$'s anti-commutes with each other)
+\eqar{
+  \ue^{-\ui\sigma_n\varphi/2}=&\sum_{j=0}^\infty\frac{\paren{-\ui\sigma_n\varphi/2}^j}{j!}\\
+  =&\sum_{j=0}^\infty\frac{\paren{-\ui\sigma_n\varphi/2}^{2j}}{(2j)!}+\sum_{j=0}^\infty\frac{\paren{-\ui\sigma_n\varphi/2}^{2j+1}}{(2j+1)!}\\
+  =&\sum_{j=0}^\infty\frac{\paren{-1}^{j}\paren{\varphi/2}^{2j}}{(2j)!}-\ui\sigma_n\sum_{j=0}^\infty\frac{\paren{-1}^{j}\paren{\varphi/2}^{2j+1}}{(2j+1)!}\\
+  =&\cos\frac{\varphi}{2}-\ui\sigma_n\sin\frac{\varphi}{2}
+}
 \subsection{}
 \subsection{}
 \subsection{}
