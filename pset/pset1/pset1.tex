@@ -3,8 +3,8 @@
 \newcommand{\course}[1]{\def\psettitlecourse{#1}}
 \newcommand{\rsection}[1]{\def\psettitlersection{#1}}
 \newcommand{\psetnum}[1]{\def\psettitlepsetnum{#1}}
-%\usepackage[journal=rsc]{chemstyle}
-%\usepackage{mhchem}
+% \usepackage[journal=rsc]{chemstyle}
+% \usepackage{mhchem}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
@@ -62,12 +62,12 @@
 \usepackage{fancyhdr}
 \usepackage{multirow}
 \usepackage{fontenc}
-%\usepackage{tipa}
+% \usepackage{tipa}
 \usepackage{ulem}
 \usepackage{color}
 \usepackage{cancel}
 \newcommand{\hcancel}[2][black]{\setbox0=\hbox{#2}%
-\rlap{\raisebox{.45\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2}
+  \rlap{\raisebox{.45\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2}
 \pagestyle{fancy}
 \setlength{\headheight}{67pt}
 \fancyhead{}
@@ -75,12 +75,12 @@
 \fancyfoot[C]{\thepage}
 \fancyhead[R]
 {
-\psettitlename \\
-\psettitlecourse{} Problem Set \psettitlepsetnum \\
-\ifx\psettitlersection\empty
-\else
-Recitation Section \psettitlersection
-\fi
+  \psettitlename \\
+  \psettitlecourse{} Problem Set \psettitlepsetnum \\
+  \ifx\psettitlersection\empty
+  \else
+  Recitation Section \psettitlersection
+  \fi
 }
 \renewcommand{\footruleskip}{0pt}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -99,9 +99,115 @@ Recitation Section \psettitlersection
 \begin{document}
 \section{}
 \subsection{}
+Represent the operation using $4\times4$ matrices that shows the mapping between
+the nodes.
+\eqar{
+  T_1=&\begin{pmatrix}
+    1&&&\\
+    &1&&\\
+    &&1&\\
+    &&&1
+  \end{pmatrix}&T_2=&\begin{pmatrix}
+    1&&&\\
+    &&1&\\
+    &&&1\\
+    &1&&
+  \end{pmatrix}&T_3=&\begin{pmatrix}
+    1&&&\\
+    &&&1\\
+    &1&&\\
+    &&1&
+  \end{pmatrix}\\
+  T_4=&\begin{pmatrix}
+    &1&&\\
+    1&&&\\
+    &&&1\\
+    &&1&
+  \end{pmatrix}&T_5=&\begin{pmatrix}
+    &1&&\\
+    &&1&\\
+    1&&&\\
+    &&&1
+  \end{pmatrix}&T_6=&\begin{pmatrix}
+    &1&&\\
+    &&&1\\
+    &&1&\\
+    1&&&
+  \end{pmatrix}\\
+  T_7=&\begin{pmatrix}
+    &&1&\\
+    1&&&\\
+    &1&&\\
+    &&&1
+  \end{pmatrix}&T_8=&\begin{pmatrix}
+    &&1&\\
+    &1&&\\
+    &&&1\\
+    1&&&
+  \end{pmatrix}&T_9=&\begin{pmatrix}
+    &&1&\\
+    &&&1\\
+    1&&&\\
+    &1&&
+  \end{pmatrix}\\
+  T_{10}=&\begin{pmatrix}
+    &&&1\\
+    1&&&\\
+    &&1&\\
+    &1&&
+  \end{pmatrix}&T_{11}=&\begin{pmatrix}
+    &&&1\\
+    &&1&\\
+    &1&&\\
+    1&&&
+  \end{pmatrix}&T_{12}=&\begin{pmatrix}
+    &&&1\\
+    &1&&\\
+    1&&&\\
+    &&1&
+  \end{pmatrix}
+}
 \subsection{}
+\eqar{
+  g_{123}=&\begin{pmatrix}
+    &&1&\\
+    1&&&\\
+    &1&&\\
+    &&&1
+  \end{pmatrix}\\g_{234}=&\begin{pmatrix}
+    1&&&\\
+    &&&1\\
+    &1&&\\
+    &&1&
+  \end{pmatrix}\\
+  g_{234}g_{123}=&\begin{pmatrix}
+    &1&&\\
+    1&&&\\
+    &&&1\\
+    &&1&
+  \end{pmatrix}=T_4
+}
+($180^\circ$ rotation around the the axis connecting the middle of 1-2 and 3-4)
+\eqar{
+  g_{123}g_{234}=&\begin{pmatrix}
+    &&1&\\
+    &&&1\\
+    1&&&\\
+    &1&&
+  \end{pmatrix}=T_9\neq T_4
+}
 \subsection{}
+See (a)
 \subsection{}
+\eqar{
+  H=\begin{pmatrix}
+    \varepsilon_0&-t&-t&-t\\
+    -t&\varepsilon_0&-t&-t\\
+    -t&-t&\varepsilon_0&-t\\
+    -t&-t&-t&\varepsilon_0
+  \end{pmatrix}
+}
+Eigenvalues are $\varepsilon_0-3t$ for eigenvector $\paren{\dfrac12,\dfrac12,\dfrac12,\dfrac12}$ and $\varepsilon_0+t$ for eigenvectors, $\paren{\dfrac12,\dfrac12,-\dfrac12,-\dfrac12}$, $\paren{\dfrac12,-\dfrac12,\dfrac12,-\dfrac12}$, $\paren{\dfrac12,-\dfrac12,-\dfrac12,\dfrac12}$.
 \section{}
 \subsection{}
 \subsection{}
