@@ -105,7 +105,24 @@
 \section{}
 \section{}
 \subsection{}
+Eigenvalue $\lambda$
+\eqar{
+  0=&(h-\lambda)^2 - \abs{g}^2\\
+  h-\lambda=&\pm\abs{g}\\
+  \lambda=&h\pm\abs{g}
+}
+Corresponding eigen vectors are $\dfrac1{\sqrt{2}}\paren{1, \pm\dfrac{g}{\abs{g}}}$
+
 \subsection{}
+Initial state
+\eqar{
+  |\psi_0\rangle=&\dfrac1{\sqrt{2}}\paren{|+\rangle+|-\rangle}
+  \intertext{At time $t$,}
+  |\psi_t\rangle=&\dfrac1{\sqrt{2}}\paren{\exp\paren{-\ui\frac{h+\abs{g}}{\hbar}t}|+\rangle+\exp\paren{-\ui\frac{h-\abs{g}}{\hbar}t}|-\rangle}\\
+  =&\dfrac{\ue^{-\ui ht/\hbar}}{\sqrt{2}}\paren{\ue^{-\ui\abs{g}t/\hbar}|+\rangle+\ue^{\ui\abs{g}t/\hbar}|-\rangle}\\
+  =&\dfrac{\ue^{-\ui ht/\hbar}}{2}\paren{\ue^{-\ui\abs{g}t/\hbar}\paren{|1\rangle+\dfrac{g}{\abs{g}}|2\rangle}+\ue^{\ui\abs{g}t/\hbar}\paren{|1\rangle-\dfrac{g}{\abs{g}}|2\rangle}}\\
+  =&\ue^{-\ui ht/\hbar}\paren{\cos\paren{\frac{\abs{g}t}{\hbar}}|1\rangle-\ui\dfrac{g}{\abs{g}}\sin\paren{\frac{\abs{g}t}{\hbar}}|2\rangle}
+}
 \section{}
 \subsection{}
 \subsection{}
