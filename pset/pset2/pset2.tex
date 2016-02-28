@@ -113,6 +113,35 @@ Hamiltonian
 }
 When $l=0$ there's only one manifold instead of two.
 \section{}
+\eqar{
+  \ue^{\lambda A}B\ue^{-\lambda A}=&\paren{\sum_{m=0}^\infty\frac{\lambda^mA^m}{m!}}B\paren{\sum_{n=0}^\infty\frac{\lambda^n\paren{-A}^n}{n!}}\\
+  =&\sum_{m,n=0}^\infty\frac{\lambda^mA^m}{m!}B\frac{\lambda^n\paren{-A}^n}{n!}\\
+  =&\sum_{m=0}^\infty\sum_{n=0}^m\frac{\lambda^mA^{m-n}B\paren{-A}^n}{\paren{m-n}!n!}\\
+  =&\sum_{m=0}^\infty\frac{\lambda^m}{m!}\sum_{n=0}^m\frac{m!A^{m-n}B\paren{-A}^n}{\paren{m-n}!n!}
+}
+So now we just need to show that
+\eqar{
+  \sqr{A^{(m)}, B}=&\sum_{n=0}^m\frac{m!A^{m-n}B\paren{-A}^n}{\paren{m-n}!n!}
+}
+where $\sqr{A^{(0)}, B}\equiv B$,
+$\sqr{A^{(n)}, B}\equiv\sqr{A, \sqr{A^{(n-1)}, B}}$.
+For $m=0$, this is trivially true. If it is true for $m-1$,
+\eqar{
+  \sqr{A^{(m)}, B}=&\sqr{A, \sum_{n=0}^{m-1}\frac{\paren{m-1}!A^{m-n-1}B\paren{-A}^n}{\paren{m-n-1}!n!}}\\
+  =&\sum_{n=0}^{m-1}\frac{\paren{m-1}!A^{m-n}B\paren{-A}^n}{\paren{m-n-1}!n!}+\sum_{n=1}^{m}\frac{\paren{m-1}!A^{m-n}B\paren{-A}^{n}}{\paren{m-n}!\paren{n-1}!}
+  \intertext{Extend the summation taking advantage of $(-1)!=\infty$}
+  \sqr{A^{(m)}, B}=&\sum_{n=0}^{m}\frac{\paren{m-1}!A^{m-n}B\paren{-A}^n}{\paren{m-n-1}!n!}+\frac{\paren{m-1}!A^{m-n}B\paren{-A}^{n}}{\paren{m-n}!\paren{n-1}!}\\
+  =&\sum_{n=0}^{m}\frac{\paren{m}!A^{m-n}B\paren{-A}^n}{\paren{m-n}!n!}
+  \paren{\frac{m-n}{m}+\frac{n}{m}}\\
+  =&\sum_{n=0}^{m}\frac{\paren{m}!A^{m-n}B\paren{-A}^n}{\paren{m-n}!n!}
+}
+Therefore, the equation is true for all $m\geqslant0$.\\
+If $\sqr{A,B}=\gamma B$, $\sqr{A^{(n)},B}=\gamma^nB$
+\eqar{
+  \ue^{\lambda A}B\ue^{-\lambda A}=&\sum_{m=0}^\infty\frac{\lambda^m}{m!}\sqr{A^{(m)}, B}\\
+  =&\sum_{m=0}^\infty\frac{\lambda^m\gamma^m}{m!}B\\
+  =&\ue^{\lambda\gamma}B
+}
 \section{}
 \section{}
 \subsection{}
