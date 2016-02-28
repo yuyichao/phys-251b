@@ -98,6 +98,27 @@
 \input{../head}
 \begin{document}
 \section{}
+\eqar{
+  |1,1;2,2\rangle=&|1,1\rangle_1|1,1\rangle_2\\
+  |1,1;2,-2\rangle=&|1,-1\rangle_1|1,-1\rangle_2\\
+  |1,1;2,1\rangle=&\frac{J_-}{2\hbar}|1,1;2,2\rangle\\
+  =&\frac{L_{1-}+L_{2-}}{2\hbar}|1,1\rangle_1|1,1\rangle_2\\
+  =&\frac{|1,0\rangle_1|1,1\rangle_2+|1,1\rangle_1|1,0\rangle_2}{\sqrt{2}}\\
+  |1,1;2,-1\rangle=&\frac{J_+}{2\hbar}|1,1;2,2\rangle\\
+  =&\frac{L_{1+}+L_{2+}}{2\hbar}|1,-1\rangle_1|1,-1\rangle_2\\
+  =&\frac{|1,0\rangle_1|1,-1\rangle_2+|1,-1\rangle_1|1,0\rangle_2}{\sqrt{2}}\\
+  |1,1;2,0\rangle=&\frac{J_-}{\sqrt{6}\hbar}|1,1;2,1\rangle\\
+  =&\frac{L_{1-}+L_{2-}}{\sqrt{6}\hbar}\frac{|1,0\rangle_1|1,1\rangle_2+|1,1\rangle_1|1,0\rangle_2}{\sqrt{2}}\\
+  =&\frac{|1,-1\rangle_1|1,1\rangle_2+2|1,0\rangle_1|1,0\rangle_2+|1,1\rangle_1|1,-1\rangle_2}{\sqrt{6}}
+  \intertext{From orthogonality}
+  |1,1;1,1\rangle=&\frac{|1,0\rangle_1|1,1\rangle_2-|1,1\rangle_1|1,0\rangle_2}{\sqrt{2}}\\
+  |1,1;1,-1\rangle=&\frac{|1,0\rangle_1|1,-1\rangle_2-|1,-1\rangle_1|1,0\rangle_2}{\sqrt{2}}\\
+  |1,1;1,0\rangle=&\frac{J_-}{\sqrt{2}\hbar}|1,1;1,1\rangle\\
+  =&\frac{L_{1-}+L_{2-}}{\sqrt{2}\hbar}\frac{|1,0\rangle_1|1,1\rangle_2-|1,1\rangle_1|1,0\rangle_2}{\sqrt{2}}\\
+  =&\frac{|1,-1\rangle_1|1,1\rangle_2-|1,1\rangle_1|1,-1\rangle_2}{\sqrt{2}}
+  \intertext{From orthogonality}
+  |1,1;0,0\rangle=&\frac{|1,-1\rangle_1|1,1\rangle_2-|1,0\rangle_1|1,0\rangle_2+|1,1\rangle_1|1,-1\rangle_2}{\sqrt{3}}
+}
 \section{}
 \subsection{}
 Since $J_z=L_z+S_z$ and $\sqr{L_z, S_z}=0$, the $J_z$ eigenstates are sum of
