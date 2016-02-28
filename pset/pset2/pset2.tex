@@ -217,17 +217,18 @@ In Heisenberg picture,
   \ui\hbar\pdiff{}{t}a=&-\sqr{H,a}\\
   =&\hbar\omega_0a-Fz_0\\
   \pdiff{}{t}a=&-\ui\omega_0a+\ui\frac{F_0z_0}{\hbar}\ue^{-t/\tau}\\
-  a=&\ue^{-\ui\omega_0t}a_0+\ui\tau\frac{F_0z_0}{\hbar}\paren{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}
+  a=&\ue^{-\ui\omega_0t}a_0+\frac{F_0z_0\tau}{\hbar\paren{\omega_0\tau+\ui}}\paren{\ue^{-t/\tau}-\ue^{-\ui\omega_0t}}
 }
 \eqar{
   \langle n|\psi\rangle=&\langle n_t|0\rangle\\
   =&\frac{1}{\sqrt{n!}}\langle 0_t|a^n|0\rangle\\
-  =&\frac{1}{\sqrt{n!}}\langle 0_t|\paren{\ue^{-\ui\omega_0t}a_0+\ui\tau\frac{F_0z_0}{\hbar}\paren{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}}^n|0\rangle\\
-  =&\frac{1}{\sqrt{n!}}\paren{\ui\tau\frac{F_0z_0}{\hbar}\paren{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}}^n\langle 0_t|0\rangle
+  =&\frac{1}{\sqrt{n!}}\langle 0_t|\paren{\ue^{-\ui\omega_0t}a_0-\frac{F_0z_0\tau}{\hbar\paren{\omega_0\tau+\ui}}\paren{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}}^n|0\rangle\\
+  =&\frac{1}{\sqrt{n!}}\paren{\frac{F_0z_0\tau}{\hbar\paren{\omega_0\tau+\ui}}\paren{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}}^n\langle 0_t|0\rangle
   \intertext{From normalization,}
-  1=&\sum_n\frac{1}{n!}\paren{\tau\frac{F_0z_0}{\hbar}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}}^{2n}\abs{\langle 0_t|0\rangle}^2\\
-  \abs{\langle 0_t|0\rangle}^2=&\exp\paren{-\frac{F_0^2z_0^2\tau^2}{\hbar^2}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}^2}\\
-  \abs{\langle n|\psi\rangle}^2=&\frac{1}{n!}\abs{\frac{F_0^2z_0^2\tau^2}{\hbar^2}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}^2}^n\exp\paren{-\frac{F_0^2z_0^2\tau^2}{\hbar^2}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}^2}
+  1=&\sum_n\frac{1}{n!}\paren{\frac{F_0z_0\tau}{\hbar\sqrt{\omega_0^2\tau^2+1}}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}}^{2n}\abs{\langle 0_t|0\rangle}^2\\
+  \abs{\langle 0_t|0\rangle}^2=&\exp\paren{-\frac{F_0^2z_0^2\tau^2}{\hbar^2\paren{\omega_0^2\tau^2+1}}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}^2}\\
+  \abs{\langle n|\psi\rangle}^2=&\frac{1}{n!}\abs{\frac{F_0^2z_0^2\tau^2}{\hbar^2\paren{\omega_0^2\tau^2+1}}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}^2}^n\exp\paren{-\frac{F_0^2z_0^2\tau^2}{\hbar^2\paren{\omega_0^2\tau^2+1}}\abs{\ue^{-\ui\omega_0t}-\ue^{-t/\tau}}^2}
 }
 \subsection{}
+The probability follows a Poisson distribution with a mean proportional to $\tau^2$ for small $\tau$ and saturate for $\omega_0\tau\approx1$.
 \end{document}
