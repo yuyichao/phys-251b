@@ -143,6 +143,25 @@ If $\sqr{A,B}=\gamma B$, $\sqr{A^{(n)},B}=\gamma^nB$
   =&\ue^{\lambda\gamma}B
 }
 \section{}
+Since $\sqr{\lambda, A}=0$ and $\sqr{A, A}=0$ (i.e. everything commutes),
+\eqar{
+  \diff{\ue^{\lambda A}}{\lambda}=&A\ue^{\lambda A}
+}
+We have
+\eqar{
+  \diff{G}{\lambda}=&\diff{\ue^{\lambda A}\ue^{\lambda B}}{\lambda}\\
+  =&\ue^{\lambda A}\diff{\ue^{\lambda B}}{\lambda}+\diff{\ue^{\lambda A}}{\lambda}\ue^{\lambda B}\\
+  =&\ue^{\lambda A}B\ue^{\lambda B}+A\ue^{\lambda A}\ue^{\lambda B}\\
+  =&\ue^{\lambda A}B\ue^{-\lambda A}\ue^{\lambda A}\ue^{\lambda B}+A\ue^{\lambda A}\ue^{\lambda B}\\
+  =&\paren{A+\ue^{\lambda A}B\ue^{-\lambda A}}G\\
+  =&\paren{A+\sum_{m=0}^\infty\frac{\lambda^m}{m!}\sqr{A^{(m)}, B}}G
+}
+Using this,
+\eqar{
+  \diff{G}{\lambda}=&\paren{\diff{\ue^{\lambda B^\dagger}\ue^{\lambda A^\dagger}}{\lambda}}^\dagger\\
+  =&\paren{\paren{B^\dagger+\sum_{m=0}^\infty\frac{\lambda^m}{m!}\sqr{{B^\dagger}^{(m)}, A^\dagger}}G^\dagger}^\dagger\\
+  =&G\paren{B+\sum_{m=0}^\infty\frac{\lambda^m}{m!}\sqr{A, B^{(m)}}}
+}
 \section{}
 \subsection{}
 Eigenvalue $\lambda$
