@@ -99,6 +99,23 @@
 \begin{document}
 \section{}
 \subsection{}
+Since $\ui\paren{\lambda a^\dagger-\lambda^*a}$ is Hermitian,
+$S_\lambda\equiv\exp\paren{\lambda a^\dagger-\lambda^*a}$ is unitary
+and $|\lambda\rangle\equiv S_\lambda|0\rangle$ is normalized.
+
+Since $[a, a^\dagger]=1$ commutes with both $a$ and $a^\dagger$
+\eqar{
+  |\lambda\rangle=&\exp\paren{\lambda a^\dagger-\lambda^*a}|0\rangle\\
+  =&\exp\paren{\lambda a^\dagger}\exp\paren{-\lambda^*a}\exp\paren{-\frac12\sqr{\lambda a^\dagger,-\lambda^*a}}|0\rangle\\
+  =&\exp\paren{\lambda a^\dagger}\exp\paren{-\lambda^*a}\exp\paren{-\frac{\abs{\lambda}^2}2}|0\rangle\\
+  =&\exp\paren{-\frac{\abs{\lambda}^2}2}\exp\paren{\lambda a^\dagger}|0\rangle
+}
+\eqar{
+  a|\lambda\rangle=&\exp\paren{-\frac{\abs{\lambda}^2}2}a\exp\paren{\lambda a^\dagger}|0\rangle\\
+  =&\exp\paren{-\frac{\abs{\lambda}^2}2}\paren{\exp\paren{\lambda a^\dagger}a+\sqr{a,\exp\paren{\lambda a^\dagger}}}|0\rangle\\
+  =&\exp\paren{-\frac{\abs{\lambda}^2}2}\sqr{a,a^\dagger}\lambda\exp\paren{\lambda a^\dagger}|0\rangle\\
+  =&\lambda|\lambda\rangle
+}
 \subsection{}
 \subsection{}
 \subsection{}
