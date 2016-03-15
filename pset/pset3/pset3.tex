@@ -140,6 +140,18 @@ $x=z_0\paren{a+a^\dagger}$, $p=\ui\dfrac{\hbar}{2z_0}\paren{a^\dagger-a}$
   =&\frac14\abs{\angl{\sqr{x,p}}}^2
 }
 \subsection{}
+\eqar{
+  |\lambda\rangle=&\exp\paren{-\frac{\abs{\lambda}^2}2}\exp\paren{\lambda a^\dagger}|0\rangle\\
+  =&\exp\paren{-\frac{\abs{\lambda}^2}2}\sum_{n=0}^\infty\frac{\paren{\lambda a^\dagger}^n}{n!}|0\rangle\\
+  =&\exp\paren{-\frac{\abs{\lambda}^2}2}\sum_{n=0}^\infty\frac{\lambda^n}{\sqrt{n!}}|n\rangle
+  \intertext{Therefore,}
+  P\paren{n}=&\exp^{-\abs{\lambda}^2}\frac{\abs{\lambda}^{2n}}{n!}\\
+  \sqr{n}_{av}=&\sum_{n=0}^\infty nP\paren{n}\\
+  =&\exp^{-\abs{\lambda}^2}\sum_{n=0}^\infty \frac{\abs{\lambda}^{2n}}{(n-1)!}\\
+  =&\abs{\lambda}^{2}\exp^{-\abs{\lambda}^2}\sum_{n=0}^\infty \frac{\abs{\lambda}^{2n}}{n!}\\
+  =&\abs{\lambda}^{2}\\
+  \sqr{E_n}_{av}=&\hbar\omega\paren{\abs{\lambda}^{2}+\frac12}
+}
 \subsection{}
 \section{}
 \subsection{}
