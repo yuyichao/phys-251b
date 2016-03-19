@@ -165,7 +165,24 @@ $x=z_0\paren{a+a^\dagger}$, $p=\ui\dfrac{\hbar}{2z_0}\paren{a^\dagger-a}$
 }
 so the relative uncertainty goes to $0$ at large $n$ limit.
 \section{}
+In a homogeneous field $B_0$ the $x$ magnetization is
+\eqar{
+  M_x=&M_0\cos\omega_0t
+}
+where $\omega_0=\dfrac{2\mu_eB_0}{\hbar}$ is the Larmor frequency.\\
+In a non-homogenous field, assuming the initial local magnetization is position
+independent
+\eqar{
+  M_x=&M_0\int\cos\dfrac{2\mu_eBt}{\hbar}p(B)\ud B
+}
 \subsection{}
+$p(B)=\dfrac{1}{2a}$
+\eqar{
+  M_x=&\frac{M_0}{2a}\int^{B_0+a}_{B_0-a}\cos\dfrac{2\mu_eBt}{\hbar}\ud B\\
+  =&\dfrac{\hbar M_0}{4\mu_eat}\left.\sin\dfrac{2\mu_eBt}{\hbar}\right|^{B_0+a}_{B_0-a}\\
+  =&\dfrac{\hbar M_0}{4\mu_eat}\paren{\sin\dfrac{2\mu_et(B_0+a)}{\hbar}-\sin\dfrac{2\mu_et(B_0-a)}{\hbar}}\\
+  =&\dfrac{\hbar M_0}{2\mu_eat}\cos\dfrac{2\mu_etB_0}{\hbar}\sin\dfrac{2\mu_eta}{\hbar}
+}
 \subsection{}
 \subsection{}
 \subsection{}
