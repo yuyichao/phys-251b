@@ -173,17 +173,26 @@ where $\omega_0=\dfrac{2\mu_eB_0}{\hbar}$ is the Larmor frequency.\\
 In a non-homogenous field, assuming the initial local magnetization is position
 independent
 \eqar{
-  M_x=&M_0\int\cos\dfrac{2\mu_eBt}{\hbar}p(B)\ud B
+  M_x=&M_0\int\cos\paren{\dfrac{2\mu_eBt}{\hbar}}p(B)\ud B
 }
 \subsection{}
 $p(B)=\dfrac{1}{2a}$
 \eqar{
-  M_x=&\frac{M_0}{2a}\int^{B_0+a}_{B_0-a}\cos\dfrac{2\mu_eBt}{\hbar}\ud B\\
-  =&\dfrac{\hbar M_0}{4\mu_eat}\left.\sin\dfrac{2\mu_eBt}{\hbar}\right|^{B_0+a}_{B_0-a}\\
-  =&\dfrac{\hbar M_0}{4\mu_eat}\paren{\sin\dfrac{2\mu_et(B_0+a)}{\hbar}-\sin\dfrac{2\mu_et(B_0-a)}{\hbar}}\\
-  =&\dfrac{\hbar M_0}{2\mu_eat}\cos\dfrac{2\mu_etB_0}{\hbar}\sin\dfrac{2\mu_eta}{\hbar}
+  M_x=&\frac{M_0}{2a}\int^{B_0+a}_{B_0-a}\cos\paren{\dfrac{2\mu_eBt}{\hbar}}\ud B\\
+  =&\dfrac{\hbar M_0}{4\mu_eat}\left.\sin\paren{\dfrac{2\mu_eBt}{\hbar}}\right|^{B_0+a}_{B_0-a}\\
+  =&\dfrac{\hbar M_0}{4\mu_eat}\paren{\sin\paren{\dfrac{2\mu_et(B_0+a)}{\hbar}}-\sin\paren{\dfrac{2\mu_et(B_0-a)}{\hbar}}}\\
+  =&\dfrac{\hbar M_0}{2\mu_eat}\cos\paren{\dfrac{2\mu_etB_0}{\hbar}}\sin\paren{\dfrac{2\mu_eta}{\hbar}}
 }
 \subsection{}
+$p(B)=\dfrac{1}{\sqrt{\pi}a}\ue^{-\paren{B-B_0}^2/a^2}$
+\eqar{
+  M_x=&\dfrac{M_0}{\sqrt{\pi}a}\int\cos\paren{\dfrac{2\mu_eBt}{\hbar}}\ue^{-\paren{B-B_0}^2/a^2}\ud B\\
+  =&\dfrac{M_0}{\sqrt{\pi}a}\Re\paren{\int\exp\paren{-\paren{B-B_0}^2/a^2+\ui\dfrac{2\mu_eBt}{\hbar}}\ud B}\\
+  =&\dfrac{M_0}{\sqrt{\pi}}\Re\paren{\int\exp\paren{-x^2+\ui\dfrac{2\mu_eat}{\hbar}x+\ui\dfrac{2\mu_eB_0t}{\hbar}}\ud x}\\
+  =&\dfrac{M_0}{\sqrt{\pi}}\Re\paren{\int\exp\paren{-x^2+\ui\dfrac{2\mu_eat}{\hbar}x+\paren{\dfrac{\mu_eat}{\hbar}}^2-\paren{\dfrac{\mu_eat}{\hbar}}^2+\ui\dfrac{2\mu_eB_0t}{\hbar}}\ud x}\\
+  =&M_0\Re\paren{\exp\paren{-\paren{\dfrac{\mu_eat}{\hbar}}^2+\ui\dfrac{2\mu_eB_0t}{\hbar}}}\\
+  =&M_0\cos\paren{\dfrac{2\mu_eB_0t}{\hbar}}\exp\paren{-\paren{\dfrac{\mu_eat}{\hbar}}^2}
+}
 \subsection{}
 \subsection{}
 \section{}
