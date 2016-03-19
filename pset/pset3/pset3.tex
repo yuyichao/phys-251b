@@ -194,7 +194,16 @@ $p(B)=\dfrac{1}{\sqrt{\pi}a}\ue^{-\paren{B-B_0}^2/a^2}$
   =&M_0\cos\paren{\dfrac{2\mu_eB_0t}{\hbar}}\exp\paren{-\paren{\dfrac{\mu_eat}{\hbar}}^2}
 }
 \subsection{}
+$p(B)=\dfrac{1}{\pi a}\dfrac{1}{1+\paren{B-B_0}^2/a^2}$
+\eqar{
+  M_x=&\dfrac{M_0}{\pi a}\Re\paren{\int\exp\paren{\ui\dfrac{2\mu_eBt}{\hbar}}\dfrac{1}{1+\paren{B-B_0}^2/a^2}\ud B}\\
+  =&\dfrac{M_0}{\pi a}\Re\paren{
+    2\pi\ui\mathbf{Res}_{B=B_0+\ui a}\paren{\exp\paren{\ui\dfrac{2\mu_eBt}{\hbar}}\dfrac{1}{1+\paren{B-B_0}^2/a^2}}
+  }\\
+  =&M_0\cos\paren{\dfrac{2\mu_eB_0t}{\hbar}}\exp\paren{-\dfrac{2\mu_eat}{\hbar}}
+}
 \subsection{}
+$M_x\paren{t}$ is a damped oscillation with a profile corresponds to the Fourier transformation of the $B$ field distribution.
 \section{}
 The probability is
 \eqar{
