@@ -249,6 +249,25 @@ Zeroth order
 \subsection{}
 Right. I guess there isn't anything to solve for this one?
 \subsection{}
+\eqar{
+  \diff{c_a}{t}=&-\frac{\ui V_0}{2\hbar}c_b\ue^{-\ui\paren{\omega_0-\omega}t}\\
+  =&-\frac{\ui\Omega}{2}c_b\ue^{-\ui\paren{\omega_0-\omega}t}\\
+  \diff{c_b}{t}=&-\frac{\ui V_0^*}{2\hbar}c_a\ue^{\ui\paren{\omega_0-\omega}t}\\
+  =&-\frac{\ui\Omega^*}{2}c_a\ue^{\ui\paren{\omega_0-\omega}t}
+  \intertext{where $\Omega=\dfrac{V_0}{\hbar}$}
+  \diff[2]{c_b}{t}=&-\frac{\ui\Omega^*}{2}\diff{c_a}{t}\ue^{\ui\paren{\omega_0-\omega}t}+\frac{\Omega^*\paren{\omega_0-\omega}}{2}c_a\ue^{\ui\paren{\omega_0-\omega}t}\\
+  =&-\frac{\abs{\Omega}^2}{4}c_b+\ui\paren{\omega_0-\omega}\diff{c_b}{t}\\
+  0=&\diff[2]{c_b}{t}-\ui\paren{\omega_0-\omega}\diff{c_b}{t}+\frac{\abs{\Omega}^2}{4}c_b
+  \intertext{For $c_b\propto\ue^{\ui\omega't}$}
+  \omega'=&-\frac\delta2\pm\omega_R
+  \intertext{where $\delta=\omega-\omega_0$. Since $c_b(0)=0$}
+  c_b=&c_{b0}\ue^{-\ui\delta t/2}\sin\omega_Rt\\
+  c_a=&\frac{2\ui}{\Omega^*}\ue^{\ui\delta t}\diff{c_b}{t}\\
+  =&\frac{2\ui c_{b0}}{\Omega^*}\ue^{\ui\delta t/2}\paren{-\ui\frac{\delta}{2}\sin\omega_Rt+\omega_R\cos\omega_Rt}
+  \intertext{Since $c_a(0)=1$}
+  c_b=&-\ui\frac{\Omega^*}{2\omega_R}\ue^{-\ui\delta t/2}\sin\omega_Rt\\
+  c_a=&\ue^{\ui\delta t/2}\paren{\cos\omega_Rt-\ui\frac{\delta}{2\omega_R}\sin\omega_Rt}
+}
 \subsection{}
 \subsection{}
 \subsection{}
