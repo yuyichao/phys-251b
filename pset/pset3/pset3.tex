@@ -229,6 +229,23 @@ $|\psi\rangle=c_a\ue^{-\ui E_at/\hbar}|a\rangle+c_b\ue^{-\ui E_bt/\hbar}|b\rangl
   \diff{c_b}{t}=&-\frac{\ui}{\hbar}c_a\ue^{\ui\omega_0t}H'_{ba}
 }
 \subsection{}
+Zeroth order
+\eqar{
+  c_a^{(0)}=&1\\
+  c_b^{(0)}=&0
+  \intertext{First order}
+  \diff{c_a^{(1)}}{t}=&-\frac{\ui}{\hbar}c_b^{(0)}\ue^{-\ui\omega_0t}H'_{ab}\\
+  =&0\\
+  \diff{c_b^{(1)}}{t}=&-\frac{\ui}{\hbar}c_a^{(0)}\ue^{\ui\omega_0t}H'_{ba}\\
+  =&-\frac{\ui}{\hbar}\ue^{\ui\omega_0t}H'_{ba}\\
+  c_a^{(1)}=&0\\
+  c_b^{(1)}=&\int_0^t-\frac{\ui V_0^*}{2\hbar}\paren{\ue^{\ui\paren{\omega+\omega_0}t'}+\ue^{\ui\paren{\omega_0-\omega}t'}}\ud t'\\
+  =&-\frac{V_0^*}{2\hbar}\paren{\frac{\ue^{\ui\paren{\omega+\omega_0}t}-1}{\omega+\omega_0}+\frac{\ue^{\ui\paren{\omega_0-\omega}t}-1}{\omega_0-\omega}}
+  \intertext{When $\abs{\omega_0-\omega}\ll\omega_0+\omega$}
+  c_b^{(1)}\approx&-\frac{V_0^*}{2\hbar}\frac{\ue^{\ui\paren{\omega_0-\omega}t}-1}{\omega_0-\omega}\\
+  \abs{c_b^{(1)}}^2\approx&\frac{\abs{V_0}^2}{4\hbar^2}\frac{\abs{\ue^{\ui\paren{\omega_0-\omega}t/2}-\ue^{-\ui\paren{\omega_0-\omega}t/2}}^2}{\paren{\omega_0-\omega}^2}\\
+  =&\frac{\abs{V_0}^2}{\hbar^2}\frac{\sin^2\paren{\paren{\omega_0-\omega}t/2}}{\paren{\omega_0-\omega}^2}
+}
 \subsection{}
 \subsection{}
 \subsection{}
