@@ -215,6 +215,19 @@ The probability is
 }
 \section{}
 \subsection{}
+$|\psi\rangle=c_a\ue^{-\ui E_at/\hbar}|a\rangle+c_b\ue^{-\ui E_bt/\hbar}|b\rangle$
+\eqar{
+  \ui\hbar\diff{}{t}|\psi\rangle=&\ui\hbar\diff{c_a}{t}\ue^{-\ui E_at/\hbar}|a\rangle+\ui\hbar\diff{c_b}{t}\ue^{-\ui E_bt/\hbar}|b\rangle+E_ac_a\ue^{-\ui E_at/\hbar}|a\rangle+E_bc_b\ue^{-\ui E_bt/\hbar}|b\rangle\\
+  H|\psi\rangle=&c_a\ue^{-\ui E_at/\hbar}E_a|a\rangle+c_b\ue^{-\ui E_bt/\hbar}E_b|b\rangle+c_a\ue^{-\ui E_at/\hbar}H'|a\rangle+c_b\ue^{-\ui E_bt/\hbar}H'|b\rangle\\
+  &\ui\hbar\diff{c_a}{t}|a\rangle+\ui\hbar\diff{c_b}{t}\ue^{-\ui\omega_0t}|b\rangle\\
+  =&c_aH'|a\rangle+c_b\ue^{-\ui\omega_0t}H'|b\rangle
+  \intertext{When $H'_{aa}=H'_{bb}=0$ we can remove all operators from the equation}
+  &\ui\hbar\diff{c_a}{t}|a\rangle+\ui\hbar\diff{c_b}{t}\ue^{-\ui\omega_0t}|b\rangle\\
+  =&c_aH'_{ba}|b\rangle+c_b\ue^{-\ui\omega_0t}H'_{ab}|a\rangle
+  \intertext{Left multiply by $\rangle a|$ or $\rangle b|$,}
+  \diff{c_a}{t}=&-\frac{\ui}{\hbar}c_b\ue^{-\ui\omega_0t}H'_{ab}\\
+  \diff{c_b}{t}=&-\frac{\ui}{\hbar}c_a\ue^{\ui\omega_0t}H'_{ba}
+}
 \subsection{}
 \subsection{}
 \subsection{}
