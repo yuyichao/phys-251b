@@ -290,5 +290,20 @@ For $\omega_Rt\ll1$ (meaning of small)
 The system comes back to the original state after $\frac{2\pi}{\omega_R}$.
 \section{}
 \subsection{}
+Initial state,
+\eqar{
+  |i\rangle=&|b;0\rangle
+  \intertext{Final state,}
+  |f\rangle=&|a;\vec k,s\rangle
+}
+where $\vec k$ and $s$ are the wave vector and polarization of the photon.
+Matrix element
+\eqar{
+  \langle f|H_{E2}|i\rangle=&-q\langle f|\paren{\vec r\cdot\vec E_0}\paren{\vec k\cdot\vec r}|i\rangle\\
+  =&\ui \sqrt{\frac{\hbar\omega_k}{2\varepsilon_0V}}q\langle a;\vec k,s|\paren{\vec r\cdot\vec n}a^\dagger_{k,s}\paren{\vec k\cdot\vec r}|b;0\rangle\\
+  =&\ui q\sqrt{\frac{\hbar\omega_k}{2\varepsilon_0V}}\langle a|\paren{\vec r\cdot\vec n}\paren{\vec k\cdot\vec r}|b\rangle\\
+  R_{b\rightarrow a}=&\frac{\hbar\omega_kq^2}{2\varepsilon_0V}\abs{\langle a|\paren{\vec r\cdot\vec n}\paren{\vec k\cdot\vec r}|b\rangle}^2
+}
+Note that the coefficient still depend on the normalization volumn $V$ which should disappear after taking the sum over a finite range of $\vec k$.
 \subsection{}
 \end{document}
