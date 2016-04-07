@@ -149,5 +149,29 @@ Since $\arctan\paren{\frac{k}{k'}\tan k'a}$ is in $\sqr{-\dfrac\pi2, \dfrac\pi2}
 $\delta$ can be smaller than $-\dfrac\pi2$ if $ka$ is large, in which case the
 scattering coefficient will have maxima.
 \section{}
+For hard sphere, the boundary condition is
+\eqar{
+  A_l\paren{R}=&0
+}
+where $A_l$ is the radial wave function of the $l$th partial wave.
+\eqar{
+  A_l\paren{r}=&\ue^{\ui\delta_l}j_l(kr)\cos\delta_l-n_l(kr)\sin\delta_l
+}
+\eqar{
+  \tan\delta_l=&\frac{j_l\paren{kR}}{n_l\paren{kR}}
+}
+For $k=\dfrac1R$
+\eqar{
+  \tan\delta_l=&\frac{j_l\paren{1}}{n_l\paren{1}}
+}
+Differencial cross section
+\begin{center}
+  \includegraphics[width=10cm]{p5_3wave_kr1.png}
+\end{center}
+The total cross section is $10.6R^2$.
+This should be reasonably accurate since higher partial waves doesn't contribute
+much at low energy. When the wavelength is very large,
+only the first partial wave is important and the scattering is symmetric.
+
 \section{}
 \end{document}
