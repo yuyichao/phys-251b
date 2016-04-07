@@ -98,9 +98,49 @@
 \input{../head}
 \begin{document}
 \section{}
+Hamiltonian
+\eqar{
+  H=&\frac{1}{2m}\paren{\vec p-\frac{q\vec A}{c}}^2
+  \intertext{Interaction term}
+  V=&\frac{q}{2mc}\paren{-\vec p\cdot\vec A-\vec A\cdot\vec p+\frac{qA^2}{c}}\\
+  =&\frac{q}{2mc}\paren{\ui\hbar\nabla\cdot\vec A-2\vec A\cdot\vec p+\frac{qA^2}{c}}
+  \intertext{Scattering wavefunction given by Born approximation}
+  \langle x|\psi^{(+)}\rangle=&\langle x|\vec k\rangle-\frac{2m}{\hbar^2}\int\ud^3x'\frac{\ue^{\ui\vec k\paren{\vec x - \vec x'}}}{4\pi\abs{\vec x-\vec x'}}\langle x'|V|\vec k\rangle\\
+  =&\langle x|\vec k\rangle-\frac{q}{\hbar^2c}\int\ud^3x'\frac{\ue^{\ui\vec k\paren{\vec x - \vec x'}}}{4\pi\abs{\vec x-\vec x'}}\langle x'|\paren{\ui\hbar\nabla\cdot\vec A-2\vec A\cdot\vec p+\frac{qA^2}{c}}|\vec k\rangle\\
+  =&\langle x|\vec k\rangle-\frac{q}{\hbar^2c}\int\ud^3x'\frac{\ue^{\ui\vec k\paren{\vec x - \vec x'}}}{4\pi\abs{\vec x-\vec x'}}\langle x'|\paren{\ui\hbar\nabla\cdot\vec A'-2\hbar\vec A'\cdot\vec k+\frac{qA'^2}{c}}|\vec k\rangle\\
+  \approx&\langle x|\vec k\rangle-\frac{q}{\hbar c}\frac{\ue^{\ui kr}}{4\pi r}\int\ud^3x'\ue^{-\ui\vec k'\cdot\vec x'}\paren{\ui\nabla\cdot\vec A'-2\vec A'\cdot\vec k+\frac{qA'^2}{\hbar c}}\langle x'|\vec k\rangle\\
+  =&\langle x|\vec k\rangle-\frac{q}{\paren{2\pi}^{3/2}\hbar c}\frac{\ue^{\ui kr}}{4\pi r}\int\ud^3x'\ue^{\ui\paren{\vec k - \vec k'}\cdot\vec x'}\paren{\ui\nabla\cdot\vec A'-2\vec A'\cdot\vec k+\frac{qA'^2}{\hbar c}}\\
+}
 \section{}
 \section{}
 \section{}
+\subsection{}
+Since there's only two plain wave solutions.
+\eqar{
+  \psi^{(+)}=&\frac{1}{\sqrt{2\pi}}\paren{\ue^{\ui kx}+f(sign(x))\ue^{\ui k\abs{x}}}
+}
+
+\subsection{}
+From the conservation of probability density,
+the in-coming and out-going wave must have the same amplitude.
+Therefore, there can only be a phase shift between them.
+
+Using the boundary condition, the wavefunction for $0 < x < a$ is,
+\eqar{
+  \psi=&A\paren{\ue^{\ui k'x}-\ue^{-\ui k'x}}
+}
+where $k'=\sqrt{k^2+2mV_0}$ and for $x \geqslant a$ is
+\eqar{
+  \psi=&\ue^{\ui\paren{kx+\delta}}-\ue^{-\ui\paren{kx+\delta}}
+}
+To satisfy the continuity condition at $x=a$
+\eqar{
+  A\ue^{\ui k'a}-A\ue^{-\ui k'a}=&\ue^{\ui\paren{ka+\delta}}-\ue^{-\ui\paren{ka+\delta}}\\
+  Ak'\ue^{\ui k'a}+Ak'\ue^{-\ui k'a}=&k\ue^{\ui\paren{ka+\delta}}+k\ue^{-\ui\paren{ka+\delta}}\\
+  A\sin k'a=&\sin\paren{ka+\delta}\\
+  Ak'\cos k'a=&k\cos\paren{ka+\delta}\\
+  \delta=&\arctan\paren{\frac{k}{k'}\tan k'a}-ka
+}
 \section{}
 \section{}
 \end{document}
