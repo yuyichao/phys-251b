@@ -146,6 +146,24 @@ Optical theorem,
 }
 
 \section{}
+Vector potential
+\eqar{
+  \vec A=&\frac{\Phi_0}{2\pi \rho}\hat\varphi\\
+  H=&-\frac{\hbar^2}{2m}\paren{\frac{1}{\rho}\pdiff{}{\rho}\rho\pdiff{}{\rho}+\frac{1}{\rho^2}\paren{\pdiff{}{\varphi}+\ui\frac{q\Phi_0}{2\pi c}}^2}
+  \intertext{Let $\alpha_0\equiv\frac{q\Phi_0}{2\pi c}$}
+  H=&-\frac{\hbar^2}{2m}\paren{\frac{1}{\rho}\pdiff{}{\rho}\rho\pdiff{}{\rho}+\frac{1}{\rho^2}\paren{\pdiff{}{\varphi}+\ui\alpha_0}^2}
+  \intertext{Radial Hamiltonian for state with angular momentum $m$}
+  H_r=&-\frac{\hbar^2}{2m}\paren{\frac{1}{\rho}\pdiff{}{\rho}\rho\pdiff{}{\rho}-\frac{1}{\rho^2}\paren{m+\alpha_0}^2}
+}
+Therefore the new eigen function is the Bessel function with order $m+\alpha_0$ and (from the asymptotic form) the phase shift is $\frac{\pi\alpha_0}{2}$.
+
+Since the total cross section is the sum of $\sin\delta_m$ which is now a
+constant. The total cross section is infinite unless $\alpha_0$ happens to be
+an even number.
+
+The AB effect changes the phase globally so it is not particularly surprising
+that the expansion diverges.
+
 \section{}
 \subsection{}
 Since there's only two plain wave solutions.
