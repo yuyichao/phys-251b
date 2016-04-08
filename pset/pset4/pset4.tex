@@ -112,6 +112,39 @@ Hamiltonian
   =&\langle x|\vec k\rangle-\frac{q}{\paren{2\pi}^{3/2}\hbar c}\frac{\ue^{\ui kr}}{4\pi r}\int\ud^3x'\ue^{\ui\paren{\vec k - \vec k'}\cdot\vec x'}\paren{\ui\nabla\cdot\vec A'-2\vec A'\cdot\vec k+\frac{qA'^2}{\hbar c}}\\
 }
 \section{}
+The plane wave function,
+\eqar{
+  \ue^{\ui\vec k\cdot\vec r}=&\ue^{\ui kr\cos\varphi}\\
+  =&\sum_{m=-\infty}^{\infty}c_n\paren{kr}\ue^{\ui m\varphi}
+  \intertext{Integrate both side with $\ue^{-\ui m\varphi}$}
+  c_m\paren{kr}=&\frac{1}{2\pi}\int_0^{2\pi}\ue^{\ui kr\cos\varphi}\ue^{-\ui m\varphi}\ud\varphi\\
+  =&\ui^mJ_m\paren{kr}
+}
+where $J_m$ is the Bessel function.
+
+At $\rho\rightarrow\infty$ the wavefunction
+\eqar{
+  \psi^{(+)}\approx&f(\varphi)\frac{\ue^{\ui k\rho}}{\sqrt{\rho}}
+}
+
+Expanding $f(\varphi)$
+\eqar{
+  f(\varphi)=&\frac{1}{\sqrt{k}}\sum_{m=-\infty}^{\infty}\ue^{\ui\delta_m}\sin\delta_m\ue^{\ui m\varphi}
+}
+
+Total cross section
+\eqar{
+  \sigma_{tot}=&\int\ud\varphi\abs{\frac{1}{\sqrt{k}}\sum_{m=-\infty}^{\infty}\ue^{\ui\delta_m}\sin\delta_m\ue^{\ui m\varphi}}^2\\
+  =&\frac{1}{k}\int\ud\varphi\sum_{m,m'=-\infty}^{\infty}\ue^{\ui\delta_m}\sin\delta_m\ue^{\ui\delta_m}\sin\delta_{m'}\ue^{-\ui m'\varphi}\ue^{\ui m\varphi}\\
+  =&\frac{2\pi}{k}\sum_{m=-\infty}^{\infty}\sin^2\delta_m
+}
+Optical theorem,
+\eqar{
+  \Im\paren{f(0)}=&\Im\paren{\frac{1}{\sqrt{k}}\sum_{m=-\infty}^{\infty}\ue^{\ui\delta_m}\sin\delta_m}\\
+  =&\frac{1}{\sqrt{k}}\sum_{m=-\infty}^{\infty}\sin^2\delta_m\\
+  =&\frac{\sqrt{k}}{2\pi}\sigma_{tot}
+}
+
 \section{}
 \section{}
 \subsection{}
