@@ -174,4 +174,51 @@ much at low energy. When the wavelength is very large,
 only the first partial wave is important and the scattering is symmetric.
 
 \section{}
+Let $a\equiv\dfrac{\hbar^2}{mg}$
+For incident wave from left
+\eqar{
+  \psi=&\left\{
+    \begin{array}{ll}
+      \ue^{\ui kx}+r\ue^{-\ui kx}&x<0\\
+      t\ue^{\ui kx}&x>0
+    \end{array}
+  \right.\\
+  1+r=&t\\
+  \frac{2}{a}t=&\ui kt -\ui k+\ui kr\\
+  t=&\frac{ka}{ka+\ui}\\
+  r=&\frac{-\ui}{ka+\ui}
+}
+For incident wave from right
+\eqar{
+  \psi=&\left\{
+    \begin{array}{ll}
+      \ue^{-\ui kx}+r'\ue^{\ui kx}&x>0\\
+      t'\ue^{-\ui kx}&x<0
+    \end{array}
+  \right.\\
+  1+r'=&t'\\
+  \frac{2}{a}t'=&\ui kt' -\ui k+\ui kr'\\
+  t'=&\frac{ka}{ka+\ui}\\
+  r'=&\frac{-\ui}{ka+\ui}
+}
+The scattering matrix in the $k$ subspace.
+\eqar{
+  S=&\frac{1}{ka+\ui}\begin{pmatrix}
+    ka&-\ui\\
+    -\ui&ka
+  \end{pmatrix}\\
+  SS^\dagger=&\frac{1}{ka+\ui}\begin{pmatrix}
+    ka&-\ui\\
+    -\ui&ka
+  \end{pmatrix}\frac{1}{ka-\ui}\begin{pmatrix}
+    ka&\ui\\
+    \ui&ka
+  \end{pmatrix}\\
+  =&\frac{1}{k^2a^2+1}\begin{pmatrix}
+    k^2a^2+1&0\\
+    0&k^2a^2+1
+  \end{pmatrix}\\
+  =&I
+}
+
 \end{document}
