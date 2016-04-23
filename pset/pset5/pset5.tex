@@ -97,8 +97,23 @@
 \psetnum{5}
 \input{../head}
 \begin{document}
-\section{}
+\section{Gauge invariance and the Lorentz force}
 \subsection{}
+Schroedinger equation
+\eqar{
+  \ui\hbar\pdiff{\psi}{t}=&-\frac{\hbar^2}{2m}\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}^2\psi+q\phi\psi
+  \intertext{Complex conjugate}
+  -\ui\hbar\pdiff{\psi^*}{t}=&-\frac{\hbar^2}{2m}\paren{\nabla+\frac{\ui q}{\hbar c}\vec A}^2\psi^*+q\phi\psi^*\\
+  \ui\hbar\psi^*\pdiff{\psi}{t}=&-\psi^*\frac{\hbar^2}{2m}\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}^2\psi+q\phi\psi^*\psi\\
+  -\ui\hbar\psi\pdiff{\psi^*}{t}=&-\frac{\hbar^2}{2m}\psi\paren{\nabla+\frac{\ui q}{\hbar c}\vec A}^2\psi^*+q\phi\psi^*\psi\\
+  \ui\hbar\pdiff{\psi^*\psi}{t}=&-\psi^*\frac{\hbar^2}{2m}\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}^2\psi+\frac{\hbar^2}{2m}\psi\paren{\nabla+\frac{\ui q}{\hbar c}\vec A}^2\psi^*\\
+  =&-\frac{\hbar^2}{2m}\paren{\nabla\paren{\psi^*\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}\psi}-\abs{\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}\psi}^2}\\
+  &+\frac{\hbar^2}{2m}\paren{\nabla\paren{\psi\paren{\nabla+\frac{\ui q}{\hbar c}\vec A}\psi^*}-\abs{\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}\psi}^2}\\
+  =&\frac{\hbar^2}{2m}\nabla\paren{\psi\paren{\nabla+\frac{\ui q}{\hbar c}\vec A}\psi^*-\psi^*\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}\psi}\\
+  \pdiff{\rho}{t}=&\frac{\hbar}{2m\ui}\nabla\paren{\psi\paren{\nabla+\frac{\ui q}{\hbar c}\vec A}\psi^*-\psi^*\paren{\nabla-\frac{\ui q}{\hbar c}\vec A}\psi}\\
+  =&-\nabla\cdot\vec j\\
+  0=&\pdiff{\rho}{t}+\nabla\cdot\vec j
+}
 \subsection{}
 \subsection{}
 \section{}
