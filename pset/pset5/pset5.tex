@@ -122,6 +122,19 @@ Under time reversal transformation
   \neq&0
 }
 \subsection{}
+Derivatives,
+\eqar{
+  \pdiff{L}{\dot r_i}=&m\dot r_i+\frac{q}{c}A_i\\
+  \pdiff{L}{r_i}=&-q\partial_i\phi+\frac{q}{c}\dot r_j\partial_iA_j
+  \intertext{Euler-Lagrange equation}
+  0=&m\ddot r_i+\frac{q}{c}\diff{A_i}{t}+q\partial_i\phi-\frac{q}{c}\dot r_j\partial_iA_j\\
+  m\ddot r_i=&-\frac{q}{c}\diff{A_i}{t}-q\partial_i\phi+\frac{q}{c}\dot r_j\partial_iA_j\\
+  =&-q\partial_i\phi-\frac{q}{c}\partial_tA_i-\frac{q}{c}\dot r_j\partial_jA_i+\frac{q}{c}\dot r_j\partial_iA_j\\
+  =&qE_i+\frac{q}{c}\paren{\delta_{ln}\delta_{im}-\delta_{lm}\delta_{in}}\dot r_l\partial_mA_n\\
+  =&qE_i+\frac{q}{c}\varepsilon_{ilj}\dot r_l\varepsilon_{jmn}\partial_mA_n\\
+  =&qE_i+\frac{q}{c}\varepsilon_{ilj}\dot r_lB_j\\
+  =&qE_i+\frac{q}{c}\paren{\vec v\times\vec B}_i
+}
 \section{}
 \subsection{}
 \subsection{}
