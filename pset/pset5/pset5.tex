@@ -141,6 +141,29 @@ Derivatives,
 \subsection{}
 \section{}
 \subsection{}
+Function to minimize
+\eqar{
+  E=&\int\ud^3r\varphi^*H\varphi-\varepsilon\paren{\int\ud^3r\varphi^*\varphi-1}\\
+  =&\int\ud^3r\paren{\alpha\psi_A+\beta\psi_B}\paren{-\frac{\hbar^2}{2m}\nabla^2-\frac{e^2}{r_{1A}}-\frac{e^2}{r_{1B}}+\frac{e^2}{R}}\paren{\alpha\psi_A+\beta\psi_B}\\
+  &-\varepsilon\paren{\int\ud^3r\paren{\alpha\psi_A+\beta\psi_B}^2-1}
+  \intertext{Expanding derivative around the center of the wavefunctions}
+  E=&\alpha\int\ud^3r\paren{\alpha\psi_A+\beta\psi_B}\paren{E_{1s}-\frac{e^2}{r_{1B}}+\frac{e^2}{R}}\psi_A\\
+  &+\beta\int\ud^3r\paren{\alpha\psi_A+\beta\psi_B}\paren{E_{1s}-\frac{e^2}{r_{1A}}+\frac{e^2}{R}}\psi_B\\
+  &-\varepsilon\paren{\int\ud^3r\paren{\alpha\psi_A+\beta\psi_B}^2-1}\\
+  =&\alpha^2\paren{E_{1s}-e^2\int\ud^3r\frac{\psi_A^2}{r_{1B}}+\frac{e^2}{R}}+\alpha\beta\paren{E_{1s}S+\frac{e^2S}{R}-e^2\int\ud^3r\frac{\psi_A\psi_B}{r_{1B}}}\\
+  &+\beta^2\paren{E_{1s}-e^2\int\ud^3r\frac{\psi_B^2}{r_{1A}}+\frac{e^2}{R}}+\alpha\beta\paren{E_{1s}S+\frac{e^2S}{R}-e^2\int\ud^3r\frac{\psi_A\psi_B}{r_{1A}}}\\
+  &-\varepsilon\paren{\alpha^2+2\alpha\beta S+\beta^2-1}
+  \intertext{Let $U_1\equiv\dint\ud^3r\dfrac{\psi_A^2}{r_{1B}}=\dint\ud^3r\dfrac{\psi_B^2}{r_{1A}}$, $U_2\equiv\dint\ud^3r\dfrac{\psi_A\psi_B}{r_{1A}}=\dint\ud^3r\dfrac{\psi_A\psi_B}{r_{1B}}$}
+  E=&\paren{\alpha^2+\beta^2}\paren{E_{1s}-e^2U_1+\frac{e^2}{R}-\varepsilon}+2\alpha\beta\paren{E_{1s}S+\frac{e^2S}{R}-e^2U_2-\varepsilon S}-\varepsilon\\
+  =&-\paren{\alpha^2+\beta^2}\paren{e^2U_1+\zeta}-2\alpha\beta\paren{e^2U_2+\zeta S}-\varepsilon
+  \intertext{To minimize $E$}
+  0=&\alpha^2+2\alpha\beta S+\beta^2-1\\
+  0=&\alpha\paren{e^2U_1+\zeta}+\beta\paren{e^2U_2+\zeta S}\\
+  0=&\beta\paren{e^2U_1+\zeta}+\alpha\paren{e^2U_2+\zeta S}
+  \intertext{Therefore,}
+  V_{AA}=&V_{BB}=e^2U_1\\
+  V_{AB}=&V_{BA}=e^2U_2
+}
 \subsection{}
 \subsection{}
 \section{}
