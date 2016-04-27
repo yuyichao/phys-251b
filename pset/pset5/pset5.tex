@@ -180,7 +180,27 @@ Therefore the full propagator takes the form
   A\exp\paren{\frac{\ui m\omega}{2\hbar\sin\omega t}\paren{\cos\omega t\paren{x^2+x'^2}-2xx'}}
 }
 \subsection{}
+\eqar{
+  K=&\sqrt{\frac{m\omega}{2\pi\ui\hbar\sin\omega t}}\\
+  =&\sqrt{\frac{m\omega}{\pi\hbar}}\paren{2\ui\sin\omega t}^{-1/2}\\
+  =&\sqrt{\frac{m\omega}{\pi\hbar}}\paren{\ue^{\ui\omega t}-\ue^{-\ui\omega t}}^{-1/2}\\
+  =&\sqrt{\frac{m\omega}{\pi\hbar}}\ue^{-\ui\omega t/2}\paren{1-\ue^{-2\ui\omega t}}^{-1/2}\\
+  =&\sqrt{\frac{m\omega}{\pi\hbar}}\ue^{-\ui\omega t/2}\sum_{i=0}^\infty a_n\ue^{-2\ui\omega t}
+}
+where $a_n$ is the expansion coefficient of $(1-x)^{1/2}$.
+The states in between are missing due to the zero in the wavefunction.
 \subsection{}
+\eqar{
+  K=&\sqrt{\frac{m\omega}{2\pi\ui\hbar\sin\omega t}}\exp\paren{\frac{\ui m\omega x^2}{\hbar\sin\omega t}\paren{\cos\omega t-1}}
+  \intertext{Trace}
+  \int K\ud x=&\sqrt{\frac{m\omega}{2\pi\ui\hbar\sin\omega t}}\exp\paren{\frac{\ui m\omega x^2}{\hbar\sin\omega t}\paren{\cos\omega t-1}}\\
+  =&\sqrt{\frac{m\omega}{2\pi\ui\hbar\sin\omega t}\frac{\ui\pi\hbar\sin\omega t}{m\omega\paren{\cos\omega t - 1}}}\\
+  =&\sqrt{\frac{1}{\paren{\cos\omega t - 1}}}\\
+  =&\frac{1}{2\ui\sin\paren{\omega t/2}}\\
+  =&\paren{\ue^{\ui\omega t/2}-\ue^{-\ui\omega t/2}}^{-1}\\
+  =&\ue^{-\ui\omega t/2}\paren{1-\ue^{-\ui\omega t}}^{-1}\\
+  =&\sum_{n=0}^\infty\exp\paren{-\ui\omega t\paren{n+\frac12}}
+}
 \section{}
 \subsection{}
 Function to minimize
