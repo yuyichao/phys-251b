@@ -201,15 +201,50 @@ Eigenvectors $r_1|R\rangle+r_2|R'\rangle$
   0=&\paren{\varepsilon-\lambda}r_1-tr_2\\
   r_2=&\mp r_1
   \intertext{Normalized eigenvectors}
-  |\psi\rangle=&\frac1{\sqrt2}\paren{|R\rangle+\mp|R'\rangle}
+  |\psi\rangle=&\frac1{\sqrt2}\paren{|R\rangle\mp|R'\rangle}
 }
 \subsection{}
 \eqar{
-  \Phi_H=&\frac12\paren{|R_1\rangle+|R_1'\rangle}\paren{|R_2\rangle+|R_2'\rangle}\\
+  |\Phi_H\rangle=&\frac12\paren{|R_1\rangle+|R_1'\rangle}\paren{|R_2\rangle+|R_2'\rangle}\\
   =&\frac12\paren{|RR\rangle+|RR'\rangle+|R'R\rangle+|R'R'\rangle}\\
-  =&\frac{1}{\sqrt2}\Phi_0+\frac{1}{2}\paren{\Phi_1+\Phi_2}\\
+  =&\frac{1}{\sqrt2}|\Phi_0\rangle+\frac{1}{2}\paren{|\Phi_1\rangle+|\Phi_2\rangle}\\
   E_H=&2\paren{\varepsilon-t}+U
 }
+Matrix elements
+\eqar{
+  h_1=&\begin{pmatrix}
+    \langle \Phi_0|h_1|\Phi_0\rangle&\langle \Phi_0|h_1|\Phi_1\rangle&\langle \Phi_0|h_1|\Phi_2\rangle\\
+    \langle \Phi_1|h_1|\Phi_0\rangle&\langle \Phi_1|h_1|\Phi_1\rangle&\langle \Phi_1|h_1|\Phi_2\rangle\\
+    \langle \Phi_2|h_1|\Phi_0\rangle&\langle \Phi_2|h_1|\Phi_1\rangle&\langle \Phi_2|h_1|\Phi_2\rangle
+  \end{pmatrix}\\
+  =&\begin{pmatrix}
+    \dfrac{1}{2}\paren{\langle R|h_1|R\rangle+\langle R'|h_1|R'\rangle}&\dfrac{1}{\sqrt2}\langle R'|h_1|R\rangle&\dfrac{1}{\sqrt2}\langle R|h_1|R'\rangle\\
+    \dfrac{1}{\sqrt2}\langle R|h_1|R'\rangle&\langle R|h_1|R\rangle&0\\
+    \dfrac{1}{\sqrt2}\langle R'|h_1|R\rangle&0&\langle R'|h_1|R'\rangle
+  \end{pmatrix}\\
+  =&\begin{pmatrix}
+    \varepsilon&\dfrac{t}{\sqrt2}&\dfrac{t}{\sqrt2}\\
+    \dfrac{t}{\sqrt2}&\varepsilon&0\\
+    \dfrac{t}{\sqrt2}&0&\varepsilon
+  \end{pmatrix}
+  \intertext{Similarly}
+  h_2=&\begin{pmatrix}
+    \varepsilon&\dfrac{t}{\sqrt2}&\dfrac{t}{\sqrt2}\\
+    \dfrac{t}{\sqrt2}&\varepsilon&0\\
+    \dfrac{t}{\sqrt2}&0&\varepsilon
+  \end{pmatrix}\\
+  V_{12}=&\begin{pmatrix}
+    0&0&0\\
+    0&U&0\\
+    0&0&U
+  \end{pmatrix}\\
+  H=&\begin{pmatrix}
+    2\varepsilon&\sqrt2t&\sqrt2t\\
+    \sqrt2t&2\varepsilon+U&0\\
+    \sqrt2t&0&2\varepsilon+U
+  \end{pmatrix}
+}
+$\alpha=\sqrt2$
 \subsection{}
 \subsection{}
 \end{document}
