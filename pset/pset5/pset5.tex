@@ -254,6 +254,18 @@ $\alpha=\sqrt2$
   \lambda_{2,3}=&2\varepsilon+\frac{U\pm\sqrt{U^2+16t^2}}{2}
 }
 Therefore $E_{exact}=2\varepsilon+\dfrac{U-\sqrt{U^2+16t^2}}{2}$\\
-\includegraphics[width=10cm]{4c.png}
+\includegraphics[width=10cm]{4c.png}\\
+For small $u$ this fallback to the non-interacting case, for large $U$, this fallback to separate atom case.
 \subsection{}
+The eigenstate corresponds to $\lambda_1$ is $|\Phi_1\rangle-|\Phi_2\rangle$
+so other eigenstates has to take the form $\dfrac{1}{\sqrt2}|\Phi_0\rangle+\frac{f(u)}{2}\paren{|\Phi_1\rangle+|\Phi_2\rangle}$ in order to be orthogonal to it.
+Substitute to $H$
+\eqar{
+  0=&\sqrt2t\frac{1}{\sqrt{2}}+\dfrac{U+\sqrt{U^2+16t^2}}{2}\frac{f}{2}\\
+  f=&-\frac{4t}{U+\sqrt{U^2+16t^2}}\\
+  =&\frac{u-\sqrt{u^2+16}}{4}
+}
+The probability of finding two electron on the same proton is $\dfrac{f^2}{1+f^2}$\\
+\includegraphics[width=10cm]{4c.png}\\
+For small $u$ this fallback to the non-interacting case, for large $U$, the atom will stay on different protons due to repulsion.
 \end{document}
