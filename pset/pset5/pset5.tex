@@ -137,6 +137,48 @@ Derivatives,
 }
 \section{}
 \subsection{}
+For each step
+\eqar{
+  K(x_{j+1},x_j;\varepsilon)=&\sqrt{\frac{m}{2\pi\ui\hbar\varepsilon}}\exp\paren{\frac{\ui}{\hbar}\paren{a_1\paren{x^2_{j+1}+x_j^2}-2b_1x_{j+1}x_j}}
+}
+where $a_1\equiv\dfrac{m}{2\varepsilon}\paren{1-2\paren{\dfrac{\omega\varepsilon}{2}}^2}$, $b_1\equiv\dfrac{m}{2\varepsilon}$. Assume,
+\eqar{
+  &\paren{\frac{m}{2\pi\ui\hbar\varepsilon}}^{n/2}\prod_{j=1}^n\int\ud x_{j-1}\exp\paren{\frac{\ui}{\hbar}\sum_{j=1}^n\paren{a_1\paren{x^2_{j-1}+x_j^2}-2b_1x_{j-1}x_j}}\\
+  =&A_n\exp\paren{\frac{\ui}{\hbar}\paren{a_n\paren{x^2_{n}+x_{0}^2}-2b_nx_{n}x_{0}}}
+  \intertext{and $a_n^2-b_n^2=a_1^2-b_1^2$}
+  &A_{n+1}\exp\paren{\frac{\ui}{\hbar}\paren{a_{n+1}\paren{x^2_{0}+x_{n+1}^2}-2b_{n+1}x_{0}x_{n+1}}}\\
+  =&A_n\paren{\frac{m}{2\pi\ui\hbar\varepsilon}}^{1/2}\int\ud x_n\exp\paren{\frac{\ui}{\hbar}\paren{a_1\paren{x^2_{n+1}+x_n^2}-2b_1x_{n+1}x_n+a_n\paren{x^2_{n}+x_{0}^2}-2b_nx_{n}x_{0}}}\\
+  =&A_n\paren{\frac{m}{2\pi\ui\hbar\varepsilon}}^{1/2}
+  \int\ud x_n\exp\paren{\frac{\ui}{\hbar}\paren{\paren{a_1+a_n}x_n^2-2\paren{b_1x_{n+1}+b_nx_0}x_n+a_1x^2_{n+1}+a_nx_{0}^2}}\\
+  =&A_n\paren{\frac{m}{2\pi\ui\hbar\varepsilon}}^{1/2}
+  \sqrt{\frac{\ui\pi\hbar}{a_1+a_n}}
+  \exp\paren{\frac{\ui}{\hbar}\paren{-\frac{\paren{b_1x_{n+1}+b_nx_0}^2}{a_1+a_n} + a_1x^2_{n+1}+a_nx_{0}^2}}\\
+  =&A_n\paren{\frac{m}{2\pi\ui\hbar\varepsilon}}^{1/2}
+  \sqrt{\frac{\ui\pi\hbar}{a_1+a_n}}
+  \exp\paren{\frac{\ui}{\hbar}\paren{
+      \paren{a_1-\frac{b_1^2}{a_1+a_n}}\paren{x_{n+1}^2+x_0^2}
+      -2\frac{b_1b_n}{a_1+a_n}x_{n+1}x_0}
+  }
+}
+So $a_{n+1}=a_1-\dfrac{b_1^2}{a_1+a_n}$, $b_{n+1}=\dfrac{b_1b_n}{a_1+a_n}$,
+which also satisfy $a_{n+1}^2-b_{n+1}^2=a_1^2-b_1^2$.
+Let $\dfrac{\omega\varepsilon}{2}=\sin\dfrac{\tilde\omega\varepsilon}{2}$
+\eqar{
+  a_1=&b_1\cos\tilde\omega\varepsilon\\
+  a_n=&\sqrt{b_n^2-b_1^2\sin^2\tilde\omega\varepsilon}\\
+  \frac1{b_{n+1}}=&\dfrac{\cos\tilde\omega\varepsilon+\sqrt{\dfrac{b_n^2}{b_1^2}-\sin^2\tilde\omega\varepsilon}}{b_n}\\
+  \frac1{b_n}=&\frac{\sin n\tilde\omega\varepsilon}{b_1\sin\tilde\omega\varepsilon}\\
+  a_n=&\frac{m\sin\tilde\omega\varepsilon}{2\varepsilon}\frac{\cos n\tilde\omega\varepsilon}{\sin n\tilde\omega\varepsilon}
+}
+In the small $\varepsilon$ limit and when $n=N$
+\eqar{
+  \frac1{b}=&\frac{2\sin\omega t}{m\omega}\\
+  a=&\frac{m\omega}{2\sin\omega t}\cos\omega t
+}
+Therefore the full propagator takes the form
+\eqar{
+  A\exp\paren{\frac{\ui m\omega}{2\hbar\sin\omega t}\paren{\cos\omega t\paren{x^2+x'^2}-2xx'}}
+}
 \subsection{}
 \subsection{}
 \section{}
