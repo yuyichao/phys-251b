@@ -118,6 +118,27 @@ limit of the Dirac equation of electron (and QED corrections on top of it).
 \section{}
 \section{}
 \subsection{}
+Radial component of $\vec j$
+\eqar{
+  j_r=&\frac{\hbar}{2m\ui}\paren{\psi^*\pdiff{}{r}\psi-\psi\pdiff{}{r}\psi^*}\\
+  =&\frac{\hbar}{m}\Im\paren{\psi^*\pdiff{}{r}\psi}
+}
+The part terms that is due to interference (for $\psi=\psi_1+\psi_2$)
+\eqar{
+  j_r'=&j_r-j_{r1}-j_{r2}\\
+  =&\frac{\hbar}{m}\Im\paren{\psi^*\pdiff{}{r}\psi}-\frac{\hbar}{m}\Im\paren{\psi_1^*\pdiff{}{r}\psi_1}-\frac{\hbar}{m}\Im\paren{\psi_2^*\pdiff{}{r}\psi_2}\\
+  =&\frac{\hbar}{m}\Im\paren{\psi_1^*\pdiff{}{r}\psi_2}+\frac{\hbar}{m}\Im\paren{\psi_2^*\pdiff{}{r}\psi_1}
+}
+Scattering wave function
+\eqar{
+  \psi=&\ue^{\ui kr\cos\theta}+f\frac{\ue^{\ui kr}}{r}
+  \intertext{current density}
+  j_r'=&\frac{\hbar}{m}\Im\paren{f\ue^{-\ui kr\cos\theta}\pdiff{}{r}\frac{\ue^{\ui kr}}{r}+f^*\frac{\ue^{-\ui kr}}{r}\pdiff{}{r}\ue^{\ui kr\cos\theta}}\\
+  =&\frac{\hbar}{m}\Im\paren{f\ue^{-\ui kr\cos\theta}\frac{r\ui k-1}{r^2}\ue^{\ui kr}+f^*\ui k\cos\theta\frac{\ue^{-\ui kr}}{r}\ue^{\ui kr\cos\theta}}
+  \intertext{Ignoring $r^{-2}$ term for large $r$}
+  j_r'\approx&\frac{\hbar k}{m}\frac{1}{r}\Im\paren{\ui f\ue^{-\ui kr\cos\theta}\ue^{\ui kr}+\ui f^*\cos\theta\ue^{-\ui kr}\ue^{\ui kr\cos\theta}}\\
+  =&\frac{\hbar k}{m}\frac{1}{r}\Im\paren{\ui \ue^{\ui kr\paren{\cos\theta-1}}f^*\cos\theta+\ui \ue^{\ui kr\paren{1-\cos\theta}}f}
+}
 \subsection{}
 \subsection{}
 \subsection{}
