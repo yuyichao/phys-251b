@@ -140,6 +140,12 @@ Scattering wave function
   =&\frac{\hbar k}{m}\frac{1}{r}\Im\paren{\ui \ue^{\ui kr\paren{\cos\theta-1}}f^*\cos\theta+\ui \ue^{\ui kr\paren{1-\cos\theta}}f}
 }
 \subsection{}
+\eqar{
+  \int_a^b\ud x\ue^{\ui\lambda x}f=&\int_a^bf\ud\frac{\ue^{\ui\lambda x}}{\ui\lambda}\\
+  =&\left.\frac{\ue^{\ui\lambda x}f}{\ui\lambda}\right|_a^b-\int_a^b\ud x f'\frac{\ue^{\ui\lambda x}}{\ui\lambda}
+  \intertext{Using the same integral by part, we can show that the second term is $O\paren{\dfrac{1}{\lambda^2}}$}
+  \int_a^b\ud x\ue^{\ui\lambda x}f=&\frac{\ue^{\ui\lambda b}f(b)-\ue^{\ui\lambda a}f(a)}{\ui\lambda}+O\paren{\dfrac{1}{\lambda^2}}
+}
 \subsection{}
 \subsection{}
 \section{}
