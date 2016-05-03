@@ -229,6 +229,18 @@ Average over input and sum over output to get total scattering cross section
 }
 \section{}
 \subsection{}
+Time dependent Schr\"odinger equation
+\eqar{
+  \ui\diff{}{t}|\psi\rangle=&H|\psi\rangle
+  \intertext{Expansion,}
+  |\psi\rangle=&\sum_nc_n\ue^{\ui\theta_n}|\psi_n\rangle
+  \intertext{where}
+  H|\psi_n\rangle=&E_n|\psi_n\rangle\\
+  0=&\ui\diff{}{t}\sum_nc_n\ue^{\ui\theta_n}|\psi_n\rangle-H\sum_nc_n\ue^{\ui\theta_n}|\psi_n\rangle\\
+  0=&\ui\sum_nc_n\diff{\ue^{\ui\theta_n}}{t}|\psi_n\rangle+\ui\sum_n\diff{c_n}{t}\ue^{\ui\theta_n}|\psi_n\rangle+\ui\sum_nc_n\ue^{\ui\theta_n}\diff{}{t}|\psi_n\rangle-\sum_nc_nE_n\ue^{\ui\theta_n}|\psi_n\rangle\\
+  0=&\langle\psi_l|\sum_n\diff{c_n}{t}\ue^{\ui\theta_n}|\psi_n\rangle+\langle\psi_l|\sum_nc_n\ue^{\ui\theta_n}\diff{}{t}|\psi_n\rangle\\
+  \diff{c_l}{t}=&-\sum_nc_n\ue^{\ui\paren{\theta_n-\theta_l}}\langle\psi_l|\diff{}{t}\psi_n\rangle
+}
 \subsection{}
 \subsection{}
 \end{document}
