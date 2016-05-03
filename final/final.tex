@@ -180,6 +180,36 @@ Therefore
 }
 \section{}
 \subsection{}
+In first Born approximation (Use $V_r$ to represent $\partial_rV$)
+\eqar{
+  f_\sigma=&-\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud^3r'\ue^{\ui\vec k\cdot\vec r'}V\paren{r',\sigma}\chi_\sigma\ue^{-\ui\vec k'\cdot\vec r'}\\
+  =&-\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud^3r'\ue^{\ui\vec k\cdot\vec r'}\paren{-\paren{1+\ui\xi}V(r')+\frac{c}{r'}V_r(r')\vec\sigma\cdot\frac{\vec r'\times\vec p}{\hbar}}\ue^{-\ui\vec k'\cdot\vec r'}\chi_\sigma\\
+  =&-\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud^3r'\ue^{\ui\vec k\cdot\vec r'}\paren{-\paren{1+\ui\xi}V(r')-\frac{c}{r'}V_r(r')\vec\sigma\cdot\paren{\vec r'\times\vec k'}}\ue^{-\ui\vec k'\cdot\vec r'}\chi_\sigma\\
+  =&\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud^3r'\ue^{\ui\paren{\vec k-\vec k'}\cdot\vec r'}\paren{1+\ui\xi}V(r')\chi_\sigma+\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud^3r'\ue^{\ui\paren{\vec k-\vec k'}\cdot\vec r'}\frac{c}{r'}V_r(r')\vec\sigma\cdot\paren{\vec r'\times\vec k'}\chi_\sigma
+  \intertext{Let $\vec q=\vec k-\vec k'$, $q=2k\sin\dfrac{\theta}2$}
+  f_\sigma=&\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud\Omega\ud r'r'^2\ue^{\ui qr'\cos\theta'}\paren{1+\ui\xi}V(r')\chi_\sigma\\
+  &+\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud\Omega\ud r'r'^2\ue^{\ui qr'\cos\theta'}cV_r(r')\vec\sigma\cdot\paren{\hat r'\times\vec k'}\chi_\sigma
+  \intertext{Due to the rotational symmetry around $\vec q$}
+  f_\sigma=&\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud\Omega\ud r'r'^2\ue^{\ui qr'\cos\theta'}\paren{1+\ui\xi}V(r')\chi_\sigma\\
+  &+\frac{1}{4\pi}\frac{2m}{\hbar^2}\int\ud\Omega\ud r'r'^2\cos\theta'\ue^{\ui qr'\cos\theta'}cV_r(r')\vec\sigma\cdot\paren{\hat q\times\vec k'}\chi_\sigma\\
+  =&\frac{m}{\hbar^2}\int\ud r'r'^2\paren{1+\ui\xi}V(r')\chi_\sigma\int_{-1}^1\ud\cos\theta'\ue^{\ui qr'\cos\theta'}\\
+  &+\frac{m}{\hbar^2}\int\ud r'r'^2cV_r(r')\vec\sigma\cdot\paren{\hat q\times\vec k'}\chi_\sigma\int_{-1}^1\ud\cos\theta'\cos\theta'\ue^{\ui qr'\cos\theta'}\\
+  =&\frac{m}{\hbar^2}\int\ud r'r'^2\paren{1+\ui\xi}V(r')\chi_\sigma
+  \frac{\ue^{\ui qr'}-\ue^{-\ui qr'}}{\ui qr'}\\
+  &+\frac{m}{\hbar^2}\int\ud r'r'^2cV_r(r')\vec\sigma\cdot\paren{\hat q\times\vec k'}\chi_\sigma
+  \paren{
+    \ue^{\ui qr'}\paren{\frac{1}{\ui qr'}+\frac{1}{q^2r'^2}}
+    +\ue^{-\ui qr'}\paren{\frac{1}{\ui qr'}-\frac{1}{q^2r'^2}}
+  }\\
+  =&\frac{2m}{\hbar^2q}\int\ud r'r'\paren{1+\ui\xi}V(r')\sin{qr'}\chi_\sigma\\
+  &+\frac{2m\ui}{\hbar^2q^2}\int\ud r'r'cV_r(r')\vec\sigma\cdot\paren{\vec q\times\vec k'}\chi_\sigma\paren{\frac{\sin{qr'}}{qr'}-\cos{qr'}}
+  \intertext{Substitute in $\hat n$}
+  =&\frac{2m}{\hbar^2q}\int\ud r'r'\paren{1+\ui\xi}V(r')\sin{qr'}\chi_\sigma\\
+  &+\vec\sigma\cdot\hat n\frac{2\ui mk^2c}{\hbar^2q^2}\sin\theta\int\ud r'r'V_r(r')\paren{\frac{\sin{qr'}}{qr'}-\cos{qr'}}\chi_\sigma
+  \intertext{Therefore,}
+  A\paren{\theta}=&\frac{2m}{\hbar^2q}\int\ud r'r'\paren{1+\ui\xi}V(r')\sin{qr'}\\
+  B\paren{\theta}=&\frac{2\ui mk^2c}{\hbar^2q^2}\sin\theta\int\ud r'r'V_r(r')\paren{\frac{\sin{qr'}}{qr'}-\cos{qr'}}
+}
 \subsection{}
 \section{}
 \subsection{}
