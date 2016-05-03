@@ -163,6 +163,21 @@ Total interference current
   =&-\frac{4\pi\hbar}{m}\Im\paren{f\paren{0}}
 }
 \subsection{}
+The total current of the incident wave is zero (since it's a plain wave).
+The total current of the scatterend wave.
+\eqar{
+  J_2=&r^2\int\ud\Omega\frac{\hbar}{m}\Im\paren{\psi_r^*\pdiff{}{r}\psi_2}\\
+  =&r^2\int\ud\Omega\frac{\hbar}{m}\Im\paren{f^*f\frac{\ue^{-\ui kr}}{r}\pdiff{}{r}\frac{\ue^{\ui kr}}{r}}\\
+  =&\int\ud\Omega\frac{\hbar}{m}\Im\paren{f^*f\frac{r\ui k-1}{r}}
+  \intertext{Ignore real term in the integral}
+  =&\frac{\hbar k}{m}\int\ud\Omega f^*f\\
+  =&\frac{\hbar k}{m}\sigma_{tot}
+}
+Therefore
+\eqar{
+  0=&\frac{\hbar k}{m}\sigma_{tot}-\frac{4\pi\hbar}{m}\Im\paren{f\paren{0}}\\
+  \sigma_{tot}=&\frac{4\pi}{k}\Im\paren{f\paren{0}}
+}
 \section{}
 \subsection{}
 \subsection{}
