@@ -242,5 +242,11 @@ Time dependent Schr\"odinger equation
   \diff{c_l}{t}=&-\sum_nc_n\ue^{\ui\paren{\theta_n-\theta_l}}\langle\psi_l|\diff{}{t}\psi_n\rangle
 }
 \subsection{}
+\eqar{
+  \diff{c_l^{(1)}}{t}=&-\sum_nc^{(0)}_n\ue^{\ui\paren{\theta_n-\theta_l}}\langle\psi_l|\diff{}{t}\psi_n\rangle\\
+  =&-\sum_n\delta_{nm}\ue^{\ui\gamma_mt}\ue^{\ui\paren{\theta_n-\theta_l}}\langle\psi_l|\diff{}{t}\psi_n\rangle\\
+  =&-\ue^{\ui\gamma_mt}\ue^{\ui\paren{\theta_m-\theta_l}}\langle\psi_l|\diff{}{t}\psi_m\rangle\\
+  c_l^{(1)}(t)=&c_l^{(1)}(0)-\int_0^t\ud t'\ue^{\ui\gamma_mt'}\ue^{\ui\paren{\theta_m(t')-\theta_l(t')}}\langle\psi_l(t')|\diff{}{t'}\psi_m(t')\rangle
+}
 \subsection{}
 \end{document}
