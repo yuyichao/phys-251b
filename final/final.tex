@@ -211,6 +211,22 @@ In first Born approximation (Use $V_r$ to represent $\partial_rV$)
   B\paren{\theta}=&\frac{2\ui mk^2c}{\hbar^2q^2}\sin\theta\int\ud r'r'V_r(r')\paren{\frac{\sin{qr'}}{qr'}-\cos{qr'}}
 }
 \subsection{}
+For $V$ being a step function,
+\eqar{
+  A\paren{\theta}=&\frac{2mV_0\paren{1+\ui\xi}}{\hbar^2q}\int_0^R\ud r'r'\sin{qr'}\\
+  =&\frac{2mV_0\paren{1+\ui\xi}}{\hbar^2q^3}\paren{\sin{qR}-qR\cos{qR}}\\
+  B\paren{\theta}=&-\frac{2\ui mk^2c}{\hbar^2q^2}\sin\theta\int\ud r'r'V_0\delta\paren{r'-R}\paren{\frac{\sin{qr'}}{qr'}-\cos{qr'}}\\
+  =&-\frac{2\ui mV_0k^2c}{\hbar^2q^3}\sin\theta \paren{\sin{qR}-qR\cos{qR}}
+}
+Average over input and sum over output to get total scattering cross section
+\eqar{
+  \diff{\sigma}{\Omega}=&\frac12\Tr\paren{\paren{A^*+\vec\sigma^*\cdot\hat nB^*}\paren{A+\vec\sigma\cdot\hat nB}}
+  \intertext{Since $\Tr\paren{\sigma_n}=0$}
+  \diff{\sigma}{\Omega}=&\frac12\paren{\abs{A}^2+\abs{B}^2}\\
+  =&2\abs{\frac{mV_0\paren{1+\ui\xi}}{\hbar^2q^3}\paren{\sin{qR}-qR\cos{qR}}}^2
+  +2\abs{\frac{mV_0k^2c}{\hbar^2q^3}\sin\theta \paren{\sin{qR}-qR\cos{qR}}}^2\\
+  =&2\paren{\frac{mV_0}{\hbar^2q^3}\paren{\sin{qR}-qR\cos{qR}}}^2\paren{1+\xi^2+k^4c^2\sin^2\theta}
+}
 \section{}
 \subsection{}
 \subsection{}
