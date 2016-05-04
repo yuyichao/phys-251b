@@ -113,6 +113,39 @@ This is a special case of the Wigner-Eckart Theorem because the $|0\rangle$ stat
 is spherical symmetric. The physical origin of the factor $g_0$ is the low energy
 limit of the Dirac equation of electron (and QED corrections on top of it).
 \subsection{}
+For $j=\dfrac12$, each pure states can be considered the eigenstate of a $\hat n\cdot\vec J$ (i.e. the direction the state is pointing to). Apply a infinitely small rotation,
+\eqar{
+  &\langle\hat n|R^\dagger_{\hat n}(\ud\theta)\paren{\vec L+g_0\vec S}R_{\hat n}(\ud\theta)|\hat n\rangle\\
+  =&\langle\hat n|\vec L+g_0\vec S|\hat n\rangle+\langle\hat n|\sqr{\vec L+g_0\vec S,\hat n\cdot\vec J}|\hat n\rangle\ud\theta+\mathcal{O}(\ud\theta^2)\\
+  =&\langle\hat n|\vec L+g_0\vec S|\hat n\rangle+\ui\hbar\hat n\times\langle\hat n|\vec L+g_0\vec S|\hat n\rangle\ud\theta+\mathcal{O}(\ud\theta^2)
+  \intertext{However, due to symmetry of the state}
+  &\langle\hat n|R^\dagger_{\hat n}(\ud\theta)\paren{\vec L+g_0\vec S}R_{\hat n}(\ud\theta)|\hat n\rangle\\
+  =&\langle\hat n|\vec L+g_0\vec S|\hat n\rangle
+  \intertext{Therefore}
+  &\hbar\hat n\times\langle\hat n|\vec L+g_0\vec S|\hat n\rangle\\
+  =&0
+  \intertext{i.e. $\vec L+g_0\vec S$ is parallel with $\hat n$ for all $\hat n$. i.e.}
+  &\langle\hat n|\vec L+g_0\vec S|\hat n\rangle\\
+  =&g'\hat n
+  \intertext{where $g'$ is a scalar c-number constant. Since we also have (from the definition of $\hat n$),}
+  &\langle\hat n|\vec J|\hat n\rangle\\
+  =&g''\hat n\\
+  &\langle\hat n|\vec L+g_0\vec S|\hat n\rangle\\
+  =&g\langle\hat n|\vec J|\hat n\rangle
+}
+should hold for all $\hat n$. (Being a linear relation, it holds try for cross terms as well by decomposing $\hat n$ into arbitrary basis.)
+
+Within the $J^2$ subspace and use $g_0=2$, we then have
+\eqar{
+  &\langle\hat n|\vec J\cdot\paren{\vec L+2\vec S}|\hat n\rangle\\
+  =&g\langle\hat n|J^2|\hat n\rangle\\
+  g=&\frac{1}{j\paren{j+1}}\langle\hat n|\vec J\cdot\paren{\vec L+2\vec S}|\hat n\rangle\\
+  =&\frac{1}{j\paren{j+1}}\langle\hat n|L^2+2S^2+3\vec L\cdot\vec S|\hat n\rangle\\
+  =&\frac{1}{j\paren{j+1}}\langle\hat n|L^2+2S^2+\frac{3}{2}\paren{J^2-L^2-S^2}|\hat n\rangle\\
+  =&\frac32+\frac12\frac{1}{j\paren{j+1}}\langle\hat n|S^2-L^2|\hat n\rangle\\
+  =&\frac32+\frac12\frac{s(s+1)-l(l+1)}{j\paren{j+1}}
+}
+
 \section{}
 The derivation of the interaction picture (i.e. expression of $V_I$) and the Dyson's series (i.e. equation 7) doesn't need to assume anything about the diagonal terms of $V$. Therefore $f_n=0$. It is of course also fine to split out the diagonal term of $V$ into $H_0$ in which case it can be said that $f_n=\dint_0^t V_{nn}(t')\ud t$. However, this also requires substitute $V$ with $V-\dsum_n|n\rangle\langle n|V_{nn}$.
 \section{}
